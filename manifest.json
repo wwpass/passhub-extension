@@ -1,0 +1,34 @@
+ {
+    "name": "PassHub",
+    "version": "0.5",
+    "description": "PassHub login",
+    "permissions": ["activeTab", "tabs"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+
+    "externally_connectable": {
+        "matches": [ "http://localhost:8080/*", "https://*.passhub.net/*", "https://*.passhub.ch/*"]
+    },
+
+    "browser_action": {
+        "default_icon": {
+            "16": "images/passhub16.png",
+            "32": "images/passhub32.png",
+            "48": "images/passhub48.png",
+            "64": "images/passhub64.png",
+            "128": "images/passhub128.png"
+        },
+        "default_popup": "popup.html"
+    },
+
+    "icons": {
+        "16": "images/passhub16.png",
+        "32": "images/passhub32.png",
+        "48": "images/passhub48.png",
+        "64": "images/passhub64.png",
+        "128": "images/passhub128.png"
+    },
+    "manifest_version": 2
+  }
